@@ -5,8 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+    <header>
+        <h1 class="text-5xl text-[#31A5AC;] font-bold text-center mt-9 mb-9">Money Master</h1>
+    </header>
+    <main class="md:flex">
+        <div class="sm:w-full md:w-1/2 ">
+            <img class="h-full" src="./money-master-main/money.jpg" alt="">
+        </div>
+        <div class="sm:w-full md:w-1/2 text-center bg-[#F8F8F8;]">
+            <h3 class="text-3xl mt-3 font-semibold mb-5" >Income</h3>
+            <p class="inline text-2xl">Income: </p><input type="text" name="" id="inp-income" class="text-2xl bg-[#DCDCDC;] px-2">
+            <h3 class="text-3xl mt-3 font-semibold mb-5" >Expenses</h3>
+
+            <p class="inline text-2xl">Food: </p><input type="text" name="" id="inp-food" class="text-2xl mb-4 bg-[#DCDCDC;] px-2">
+            <br>
+            <p class="inline text-2xl">Rent: </p><input type="text" name="" id="inp-rent" class="text-2xl mb-4 bg-[#DCDCDC;] px-2">
+            <br>
+            <p class="inline text-2xl">Cloths: </p><input type="text" name="" id="inp-cloths" class="text-2xl mb-4 bg-[#DCDCDC;] px-2">
+            <br>
+            <button id="btn-calculate" class="bg-sky-500 px-8 py-3 text-2xl rounded-lg font-bold text-white">Calculate</button>
+
+            <h3 class="text-3xl mt-3 font-semibold mb-5" >Total Expenses: <span id="total-expense"></span></h3>
+            <h3 class="text-3xl mt-3 font-semibold mb-5" >Balance: <span id="balance"></span></h3>
+
+            <p class="inline text-2xl">Save: <input type="text" name="" id="inp-save" class="text-2xl mb-4 bg-[#DCDCDC;] px-3 w-32"> %  </p><button id="btn-save" class="bg-sky-500 px-8 py-1 text-2xl rounded-lg font-bold text-white">Save</button>
+
+            <h3 class="text-3xl mt-3 font-semibold mb-5" >Saving Amount: <span id="saving-amount"></span></h3>
+            <h3 class="text-3xl mt-3 font-semibold mb-5" >Remaining Balance: <span id="ramaining-amount"></span></h3>
+        </div>
+    </main>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
